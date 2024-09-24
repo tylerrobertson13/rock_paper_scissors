@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <script src="script.js"></script>
-    
+    <h1 id="header">Rock, Paper, Scissors</h1>
+    <div id="top-text">one two three SHOOT!</div>
+    <div id="the-buttons">
+        <button id="rockbutton" onclick="rockRound('rock', getComputerChoice())">🪨</button>
+        <button id="paper-button" onclick="paperRound('paper', getComputerChoice())">📄</button>
+        <button id="scissors-button" onclick="scissorsRound('scissors', getComputerChoice())">✂️</button>
+    </div>
+    <div id="selections">
+        <div id="player-choice" class="choice">
+            <div class="selection-text">You Picked:</div>
+            <div id="playerimg"></div>
+        </div>
+        <div id="computer-choice" class="choice">
+            <div class="selection-text">Computer Picked:</div>
+            <div id="computerimg"></div>
+        </div>
+    </div>
+    <div id="round-results">
+        <div id="result">Result:</div>
+        <div id="win-loss"></div>
+        <div id="resulttext"></div>
+    </div>
+
+ <script src="script.js"></script>
 </body>
+
 </html>
